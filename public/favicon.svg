@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="walletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#4f7df0"/>
+    </linearGradient>
+  </defs>
+  <!-- Wallet -->
+  <rect x="5" y="25" rx="12" ry="12" width="80" height="55" fill="url(#walletGrad)"/>
+  <rect x="60" y="38" rx="8" ry="8" width="25" height="25" fill="#1e3a5f"/>
+  <circle cx="72" cy="50" r="4" fill="#f59e0b"/>
+  <!-- Chart Bars -->
+  <rect x="18" y="15" width="10" height="28" rx="3" fill="#22c55e"/>
+  <rect x="32" y="8" width="10" height="35" rx="3" fill="#f59e0b"/>
+  <rect x="46" y="2" width="10" height="41" rx="3" fill="#4f7df0"/>
+</svg>

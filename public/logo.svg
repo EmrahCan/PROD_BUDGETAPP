@@ -1,0 +1,31 @@
+<svg width="360" height="120" viewBox="0 0 360 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="walletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#4f7df0"/>
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <!-- Wallet -->
+  <rect x="10" y="30" rx="14" ry="14" width="90" height="60" fill="url(#walletGrad)"/>
+  <rect x="70" y="45" rx="10" ry="10" width="30" height="30" fill="#1e3a5f"/>
+  <circle cx="85" cy="60" r="5" fill="#f59e0b"/>
+  <!-- Chart Bars -->
+  <rect x="28" y="20" width="10" height="30" rx="3" fill="#22c55e"/>
+  <rect x="42" y="14" width="10" height="36" rx="3" fill="#f59e0b"/>
+  <rect x="56" y="8" width="10" height="42" rx="3" fill="#4f7df0"/>
+  <!-- Text -->
+  <text x="120" y="70" font-size="40" font-weight="700"
+        font-family="Inter, Arial, sans-serif"
+        fill="#1e293b">
+    Budget
+  </text>
+  <text x="245" y="70" font-size="40" font-weight="700"
+        font-family="Inter, Arial, sans-serif"
+        fill="url(#appGrad)">
+    App
+  </text>
+</svg>

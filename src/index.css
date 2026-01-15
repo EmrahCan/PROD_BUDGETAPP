@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Modern Light Theme - Clean & Professional */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Modern Teal/Cyan */
+    --primary: 173 80% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Soft Indigo */
+    --secondary: 226 70% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted - Subtle Gray */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 20% 45%;
+
+    /* Accent - Warm Orange */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive - Modern Red */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Fresh Green */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Amber */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 173 80% 40%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar - White in light mode */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 173 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 173 80% 45%;
+
+    /* Header - White in light mode */
+    --header-background: 0 0% 100%;
+    --header-foreground: 222 47% 11%;
+    --header-border: 214 32% 91%;
+
+    /* Financial Theme Colors */
+    --financial-blue: 226 70% 55%;
+    --financial-green: 142 71% 45%;
+    --financial-purple: 262 83% 58%;
+    --financial-gold: 38 92% 50%;
+    --financial-red: 0 72% 51%;
+    --financial-teal: 173 80% 40%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(173 80% 40%) 0%, hsl(226 70% 55%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(142 71% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(173 80% 40%) 0%, hsl(226 70% 55%) 50%, hsl(262 83% 58%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(222 47% 11% / 0.06);
+    --shadow-medium: 0 4px 16px -4px hsl(222 47% 11% / 0.1);
+    --shadow-large: 0 8px 32px -8px hsl(222 47% 11% / 0.14);
+    
+    /* Transitions */
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Modern Dark Theme - Elegant & Easy on Eyes */
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Brighter Teal for dark mode */
+    --primary: 173 80% 50%;
+    --primary-foreground: 222 47% 8%;
+
+    /* Secondary - Lighter Indigo */
+    --secondary: 226 70% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted - Dark Gray */
+    --muted: 222 47% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent - Vibrant Orange */
+    --accent: 25 95% 58%;
+    --accent-foreground: 0 0% 0%;
+
+    /* Destructive - Softer Red for dark */
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Brighter Green */
+    --success: 142 71% 50%;
+    --success-foreground: 0 0% 0%;
+
+    /* Warning */
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 0%;
+
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 173 80% 50%;
+    
+    /* Sidebar - Darker Slate */
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 173 80% 50%;
+    --sidebar-primary-foreground: 222 47% 8%;
+    --sidebar-accent: 222 47% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 47% 14%;
+    --sidebar-ring: 173 80% 50%;
+
+    /* Header - Dark in dark mode */
+    --header-background: 222 47% 6%;
+    --header-foreground: 210 40% 98%;
+    --header-border: 222 47% 14%;
+    
+    /* Financial Theme Colors - Dark mode adjusted */
+    --financial-blue: 226 70% 60%;
+    --financial-green: 142 71% 50%;
+    --financial-purple: 262 83% 65%;
+    --financial-gold: 38 92% 55%;
+    --financial-red: 0 72% 58%;
+    --financial-teal: 173 80% 50%;
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.25);
+    --shadow-medium: 0 4px 16px -4px hsl(0 0% 0% / 0.35);
+    --shadow-large: 0 8px 32px -8px hsl(0 0% 0% / 0.45);
+    
+    /* Gradients - Dark mode adjusted */
+    --gradient-primary: linear-gradient(135deg, hsl(173 80% 50%) 0%, hsl(226 70% 60%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 71% 50%) 0%, hsl(142 71% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(173 80% 50%) 0%, hsl(226 70% 60%) 50%, hsl(262 83% 65%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  /* Theme transition - smooth color changes */
+  html {
+    transition: background-color 0.4s ease, color 0.3s ease;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.4s ease, color 0.3s ease;
+  }
+
+  /* Apply transitions to all themed elements */
+  .theme-transition,
+  .theme-transition *,
+  [class*="bg-"],
+  [class*="text-"],
+  [class*="border-"] {
+    transition: background-color 0.4s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+  }
+
+  /* Card and container transitions */
+  .card, [data-slot="card"],
+  .popover, [data-slot="popover"],
+  .dialog, [data-slot="dialog"],
+  input, textarea, select, button {
+    transition: background-color 0.4s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+  }
+  
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Theme toggle icon animations */
+  @keyframes sun-spin {
+    0% {
+      transform: rotate(-90deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moon-spin {
+    0% {
+      transform: rotate(90deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-sun {
+    animation: sun-spin 0.5s ease-out forwards;
+  }
+
+  .animate-moon {
+    animation: moon-spin 0.5s ease-out forwards;
+  }
+}
